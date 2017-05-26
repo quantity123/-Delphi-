@@ -1,0 +1,28 @@
+unit uIUser;
+
+interface
+
+uses
+  uUser;
+
+type
+  IUser = interface
+    procedure Insert(User: TUser);
+    function GetUser(ID: Integer): TUser;
+  end;
+
+  TSqlServerUser = class(TInterfacedObject, IUser)
+  public
+    procedure Insert(User: TUser);
+    function GetUser(ID: Integer): TUser;
+  end;
+
+  TAccessUser = class(TInterfacedObject, IUser)
+  public
+    procedure Insert(User: TUser);
+    function GetUser(ID: Integer): TUser;
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,44 @@
+unit Product;
+
+interface
+
+uses
+  Classes;
+
+type
+  TProduct = class
+  private
+    FList: TStringList;
+  public
+    constructor Create;
+    destructor Destory; override;
+    procedure Add(Part: string);
+    procedure Show;
+  end;
+
+implementation
+
+{ TProduct }
+
+procedure TProduct.Add(Part: string);
+begin
+  FList.Add(Part);
+end;
+
+constructor TProduct.Create;
+begin
+  FList := TStringList.Create;  
+end;
+
+destructor TProduct.Destory;
+begin
+  FList.Free;
+  inherited;
+end;
+
+procedure TProduct.Show;
+begin
+
+end;
+
+end.

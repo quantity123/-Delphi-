@@ -1,0 +1,52 @@
+unit Main;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TForm1 = class(TForm)
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  uIFactory, uIUser, uIDepartment;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  Factory: IFactory;
+
+  User: TUser;
+  iU: IUser;
+
+  Dept: TDepartment;
+  iDept: IDepartment;
+begin
+  //Factory := TSqlServerFactory.Create;
+  Factory := TAccessFactory.Create;
+
+  User := TUser.Create;
+  iU := Factory.CreateUser;
+  iU.Insert(User);
+  iU.GetUser(1);
+  User.Free;
+
+  Dept := TDepartment.Create;
+  iDept
+
+end;
+
+end.

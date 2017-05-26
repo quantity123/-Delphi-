@@ -1,0 +1,14 @@
+unit uDepartment;
+
+interface
+
+type
+  TDepartment = class
+  private
+    FDeptID: Integer;
+  public
+  end;
+
+implementation
+
+end.

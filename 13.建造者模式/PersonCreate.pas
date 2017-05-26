@@ -1,0 +1,54 @@
+unit PersonCreate;
+
+interface
+
+uses
+  PersonBuilder;
+
+type
+  TPersonType = (Thin, Fat);
+  TPersonCreate = class
+  private
+    FPersonBuilder: TPersonBuilder;
+    procedure CreatePerson;
+  public
+    constructor Create(PT: TPersonType);
+    destructor Destroy; override;
+    function GetPersonInfo: string;
+  end;
+
+implementation
+
+{ TPersonCreate }
+
+constructor TPersonCreate.Create(PT: TPersonType);
+begin
+  case PT of
+    Thin: FPersonBuilder := TPersonThinBuilder.Create;
+    Fat: FPersonBuilder := TPersonFatBuilder.Create;
+  end;
+  CreatePerson;
+end;
+
+destructor TPersonCreate.Destroy;
+begin
+  FPersonBuilder.Free;
+  inherited;
+end;
+
+function TPersonCreate.GetPersonInfo: string;
+begin
+  Result := FPersonBuilder.GetPersonInfo;
+end;
+
+procedure TPersonCreate.CreatePerson;
+begin
+  FPersonBuilder.BuildHead;
+  FPersonBuilder.BuildBody;
+  FPersonBuilder.BuildArmLeft;
+  FPersonBuilder.BuildArmRight;
+  FPersonBuilder.BuildLegLeft;
+  FPersonBuilder.BuildLegRight;
+end;
+
+end.

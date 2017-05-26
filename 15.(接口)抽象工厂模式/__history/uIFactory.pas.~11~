@@ -1,0 +1,39 @@
+unit uIFactory;
+
+interface
+
+uses
+  uIUser;
+
+type
+  IFactory = interface
+    function CreateUser: IUser;
+  end;
+
+  TSqlServerFactory = class(TInterfacedObject, IFactory)
+  public
+    function CreateUser: IUser;    
+  end;
+
+  TAccessFactory = class(TInterfacedObject, IFactory)
+  public
+    function CreateUser: IUser;
+  end;
+
+implementation
+
+{ TAccessFactory }
+
+function TAccessFactory.CreateUser: IUser;
+begin
+
+end;
+
+{ TSqlServerFactory }
+
+function TSqlServerFactory.CreateUser: IUser;
+begin
+
+end;
+
+end.

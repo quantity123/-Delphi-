@@ -1,0 +1,66 @@
+unit Tmplate;
+
+interface
+
+type
+  TAbstractClass = class
+  public
+    procedure PrimitiveOperation1; virtual; abstract;
+    procedure PrimitiveOperation2; virtual; abstract;
+    procedure TemplateMethod;
+  end;
+
+  TConcreteClassA = class
+  public
+    procedure PrimitiveOperation1; override;
+    procedure PrimitiveOperation2; override;
+  end;
+
+  TConcreteClassB = class
+  public
+    procedure PrimitiveOperation1; override;
+    procedure PrimitiveOperation2; override;
+  end;
+
+implementation
+
+uses
+  Dialogs;
+
+{ TAbstractClass }
+
+procedure TAbstractClass.TemplateMethod;
+begin
+  PrimitiveOperation1;
+  PrimitiveOperation2;
+end;
+
+{ TConcreteClassA }
+
+procedure TConcreteClassA.PrimitiveOperation1;
+begin
+  inherited;
+  ShowMessage('具体类A方法1实现');
+end;
+
+procedure TConcreteClassA.PrimitiveOperation2;
+begin
+  inherited;
+  ShowMessage('具体类A方法2实现');
+end;
+
+{ TConcreteClassB }
+
+procedure TConcreteClassB.PrimitiveOperation1;
+begin
+  inherited;
+  ShowMessage('具体类B方法1实现');
+end;
+
+procedure TConcreteClassB.PrimitiveOperation2;
+begin
+  inherited;
+  ShowMessage('具体类B方法2实现');
+end;
+
+end.

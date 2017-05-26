@@ -1,0 +1,40 @@
+unit Main;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TForm1 = class(TForm)
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  Fund;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  Fund: TFund;
+begin
+  Fund := TFund.Create;
+  Fund.Fund1Buy;
+  Fund.Fund1Sell;
+  Fund.Fund2Buy;
+  Fund.Fund2Sell;
+  Fund.Free;
+end;
+
+end.

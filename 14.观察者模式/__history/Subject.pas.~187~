@@ -1,0 +1,176 @@
+unit Subject;
+
+interface
+
+uses
+  Classes;
+
+type
+  ISubject = interface;
+
+  TObServer = class
+  private
+    FName: string;
+    FSubject: ISubject;
+  protected
+    procedure Update; virtual; abstract;
+  public
+    constructor Create(Name: string; Subject: ISubject);
+    destructor Destroy; override;
+  end;
+
+  TStockObServer = class(TObServer)
+  protected
+    procedure Update; override;
+  public
+
+    //constructor Create(Name: string; Subject: ISubject);
+    //destructor Destroy; override;
+  end;
+
+  TNBAObServer = class(TObServer)
+  protected
+    procedure Update; override;
+  public
+    //constructor Create(Name: string; Subject: ISubject);
+    //destructor Destroy; override;  
+  end;
+
+  ISubject = interface
+    procedure Attach(ObServer: TObServer);
+    procedure Detach(ObServer: TObServer);
+    procedure Notify;
+    function GetSubjectState: string;
+    procedure SetSubjectState(S: string);
+    property SubjectState: string read GetSubjectState write SetSubjectState;
+  end;
+
+ //使用循环遍历通知委托
+  TSubject = class(TInterfacedObject, ISubject)
+  private
+    FObServerList: TList;
+    FAction: string;
+    function GetSubjectState: string;
+    procedure SetSubjectState(S: string);
+  protected
+    procedure Attach(ObServer: TObServer); virtual;
+    procedure Detach(ObServer: TObServer); virtual;
+    procedure Notify; virtual;
+  public
+    constructor Create;
+    destructor Destroy; override;
+  end;
+
+  TBoss = class(TSubject)
+  private
+    FOnUpdate: TOnUpdate;
+  protected
+    procedure Notify; override;
+  end;
+
+  TSecretary = class(TSubject)
+  private
+    FOnUpdate: TOnUpdate;
+  protected
+    procedure Notify; override;
+  end;
+
+implementation
+
+uses
+  Dialogs, SysUtils;
+
+{ TSubject }
+
+constructor TSubject.Create;
+begin
+  FObServerList := TList.Create;
+end;
+
+destructor TSubject.Destroy;
+begin
+  FObServerList.Free;
+  inherited;
+end;
+
+procedure TSubject.Attach(ObServer: TObServer);
+begin
+  FObServerList.Add(ObServer);
+end;
+
+procedure TSubject.Detach(ObServer: TObServer);
+begin
+  FObServerList.Remove(ObServer);
+end;
+
+procedure TSubject.Notify;
+var
+  I: Integer;
+begin
+  for I := 0 to FObServerList.Count - 1 do
+  begin
+    TObServer(FObServerList[I]).Update;
+  end;
+end;
+
+function TSubject.GetSubjectState: string;
+begin
+  Result := FAction;
+end;
+
+procedure TSubject.SetSubjectState(S: string);
+begin
+  FAction := S;
+end;
+
+{ TObServer }
+
+constructor TObServer.Create(Name: string; Subject: ISubject);
+begin
+  FName := Name;
+  FSubject := Subject;
+end;
+
+destructor TObServer.Destroy;
+begin
+
+  inherited;
+end;
+
+{ TStockObServer }
+
+procedure TStockObServer.Update;
+var
+  S: string;
+begin
+  inherited;
+  S := Format('%s,%s关闭股票行情，继续工作！', [FName, FSubject.SubjectState]);
+  ShowMessage(S);
+end;
+
+{ TNBAObServer }
+
+procedure TNBAObServer.Update;
+var
+  S: string;
+begin
+  inherited;
+  S := Format('%s,%s关闭NBA篮球节目，继续工作！', [FName, FSubject.SubjectState]);
+  ShowMessage(S);
+end;
+
+{ TSecretary }
+
+procedure TSecretary.Notify;
+begin
+  FOnUpdate;
+end;
+
+{ TBoss }
+
+procedure TBoss.Notify;
+begin
+  FOnUpdate;
+end;
+
+end.

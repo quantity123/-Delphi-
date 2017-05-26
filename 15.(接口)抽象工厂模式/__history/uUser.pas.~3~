@@ -1,0 +1,15 @@
+unit uUser;
+
+interface
+
+type
+  TUser = class
+  private
+    FId: Integer;
+    
+  public
+  end;
+
+implementation
+
+end.

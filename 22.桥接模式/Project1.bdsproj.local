@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/09/19 17:36:36.558.pas,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\22.桥接模式\Main.pas</Transaction>
+    <Transaction>2016/09/19 17:36:36.558.dfm,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\22.桥接模式\Main.dfm</Transaction>
+    <Transaction>2016/09/19 17:36:38.000.bdsproj,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Project1.bdsproj=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\22.桥接模式\Project1.bdsproj</Transaction>
+    <Transaction>2016/09/19 17:37:13.506.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\22.桥接模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\22.桥接模式\HandsetSoft.pas</Transaction>
+    <Transaction>2016/09/19 17:44:14.383.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\22.桥接模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\22.桥接模式\HandsetBrand.pas</Transaction>
+  </Transactions>
+</BorlandProject>

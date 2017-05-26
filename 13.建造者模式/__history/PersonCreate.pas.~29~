@@ -1,0 +1,50 @@
+unit PersonCreate;
+
+interface
+
+uses
+  PersonBuilder;
+
+type
+  TPersonCreate = class
+  private
+    FPersonBuilder: TPersonBuilder;
+    procedure CreatePerson;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    function GetPersonInfo: string;
+  end;
+
+implementation
+
+{ TPersonCreate }
+
+constructor TPersonCreate.Create;
+begin
+  FPersonBuilder := PersonBuilder;
+  CreatePerson;
+end;
+
+destructor TPersonCreate.Destroy;
+begin
+  FPersonBuilder.Free;
+  inherited;
+end;
+
+function TPersonCreate.GetPersonInfo: string;
+begin
+  Result := FPersonBuilder.GetPersonInfo;
+end;
+
+procedure TPersonCreate.CreatePerson;
+begin
+  FPersonBuilder.BuildHead;
+  FPersonBuilder.BuildBody;
+  FPersonBuilder.BuildArmLeft;
+  FPersonBuilder.BuildArmRight;
+  FPersonBuilder.BuildLegLeft;
+  FPersonBuilder.BuildLegRight;
+end;
+
+end.

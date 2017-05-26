@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/25 17:44:08.204.pas,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\5.观察者模式\Main.pas</Transaction>
+    <Transaction>2016/08/25 17:44:08.204.dfm,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\5.观察者模式\Main.dfm</Transaction>
+    <Transaction>2016/08/25 17:44:09.782.bdsproj,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Project1.bdsproj=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\5.观察者模式\Project1.bdsproj</Transaction>
+    <Transaction>2016/08/25 17:45:03.730.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\5.观察者模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\5.观察者模式\Subject.pas</Transaction>
+  </Transactions>
+</BorlandProject>

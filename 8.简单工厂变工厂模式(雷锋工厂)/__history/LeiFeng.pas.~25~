@@ -1,0 +1,67 @@
+unit LeiFeng;
+
+interface
+
+uses
+  Dialogs;
+
+type
+  TLeiFeng = class
+  public
+    procedure Sweep; virtual; abstract;
+    procedure Wash; virtual; abstract;
+    procedure BuyRice; virtual; abstract;
+  end;
+
+  TUndergraduate = class(TLeiFeng)
+  public
+    procedure Sweep; override;
+    procedure Wash; override;
+    procedure BuyRice; override;
+  end;
+
+  TVolunteer = class(TLeiFeng)
+    procedure Sweep; override;
+    procedure Wash; override;
+    procedure BuyRice; override;
+  end;
+
+implementation
+
+{ TUndergraduate }
+
+procedure TUndergraduate.BuyRice;
+begin
+  ShowMessage('ÂòÃ×');
+
+
+end;
+
+procedure TUndergraduate.Sweep;
+begin
+  ShowMessage('É¨µØ');
+end;
+
+procedure TUndergraduate.Wash;
+begin
+  ShowMessage('Ï´ÒÂ');
+end;
+
+{ TVolunteer }
+
+procedure TVolunteer.BuyRice;
+begin
+
+end;
+
+procedure TVolunteer.Sweep;
+begin
+
+end;
+
+procedure TVolunteer.Wash;
+begin
+
+end;
+
+end.

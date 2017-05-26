@@ -1,0 +1,13 @@
+unit Work;
+
+interface
+
+type
+  TWork = class
+  private
+    
+  end;
+
+implementation
+
+end.

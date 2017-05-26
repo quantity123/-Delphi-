@@ -1,0 +1,12 @@
+unit uDepartment;
+
+interface
+
+type
+  TDepartment = class
+  
+  end;
+
+implementation
+
+end.

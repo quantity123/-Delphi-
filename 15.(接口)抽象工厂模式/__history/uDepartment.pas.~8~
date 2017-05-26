@@ -1,0 +1,18 @@
+unit uDepartment;
+
+interface
+
+type
+  TDepartment = class
+  private
+    FDeptID: Integer;
+    FDeptName: string;
+    
+  public
+    property DeptID: Integer read FDeptID write FDeptID;
+    property DeptName: string read FDeptName write FDeptName;
+  end;
+
+implementation
+
+end.

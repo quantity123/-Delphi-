@@ -1,0 +1,41 @@
+unit Factory;
+
+interface
+
+uses
+  LeiFeng;
+
+type
+  IFactory = interface
+    function CreateLeiFeng: TLeiFeng;
+  end;
+
+  //学雷锋的大学生工厂
+  TUndergraduateFactory = class(IFactory)
+  public
+    function CreateLeiFeng: TLeiFeng;
+  end;
+
+  //社区志愿者工厂
+  TVolunteerFactory = class(IFactory)
+  public
+    function CreateLeiFeng: TLeiFeng;
+  end;  
+
+implementation
+
+{ TVolunteerFactory }
+
+function TVolunteerFactory.CreateLeiFeng: TLeiFeng;
+begin
+  Result := TVolunteer.Create;
+end;
+
+{ TUndergraduateFactory }
+
+function TUndergraduateFactory.CreateLeiFeng: TLeiFeng;
+begin
+  Result := TUndergraduate.Create;
+end;
+
+end.

@@ -1,0 +1,18 @@
+unit Fund;
+
+interface
+
+type
+  TFund = class
+  private
+    
+  public
+    procedure Fund1Buy;
+    procedure Fund1Sell;
+    procedure Fund2Buy;
+    procedure Fund2Sell;
+  end;
+
+implementation
+
+end.

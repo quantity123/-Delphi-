@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/29 16:12:55.486.pas,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\Main.pas</Transaction>
+    <Transaction>2016/08/29 16:12:55.486.dfm,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\Main.dfm</Transaction>
+    <Transaction>2016/08/29 16:12:56.767.bdsproj,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Project1.bdsproj=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\Project1.bdsproj</Transaction>
+    <Transaction>2016/08/29 16:13:49.467.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\uIUser.pas</Transaction>
+    <Transaction>2016/08/29 16:17:27.443.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\uUser.pas</Transaction>
+    <Transaction>2016/08/29 16:26:48.219.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\uIFactory.pas</Transaction>
+    <Transaction>2016/08/29 16:51:02.073.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\uDepartment.pas</Transaction>
+    <Transaction>2016/08/29 16:55:44.092.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\uUser.pas=</Transaction>
+    <Transaction>2016/08/29 16:57:15.550.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\uDepartment.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\6.抽象(接口)工厂模式\uIDepartment.pas</Transaction>
+  </Transactions>
+</BorlandProject>

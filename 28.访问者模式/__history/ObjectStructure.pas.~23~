@@ -1,0 +1,50 @@
+unit ObjectStructure;
+
+interface
+
+uses
+  Classes, Person;
+
+type
+  TObjectStructure = class
+  private
+    FElements: TList;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    procedure Attach(Element: TPerson);
+    procedure Detach(Element: TPerson);
+    procedure Display(Visitor: TAction);  
+  end;
+
+implementation
+
+{ TObjectStructure }
+
+constructor TObjectStructure.Create;
+begin
+  FElements := TList.Create;
+end;
+
+destructor TObjectStructure.Destroy;
+begin
+  FElements.Free;
+  inherited;
+end;
+
+procedure TObjectStructure.Attach(Element: TPerson);
+begin
+
+end;
+
+procedure TObjectStructure.Detach(Element: TPerson);
+begin
+
+end;
+
+procedure TObjectStructure.Display(Visitor: TAction);
+begin
+
+end;
+
+end.

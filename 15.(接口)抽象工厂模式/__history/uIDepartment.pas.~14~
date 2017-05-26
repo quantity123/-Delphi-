@@ -1,0 +1,28 @@
+unit uIDepartment;
+
+interface
+
+type
+  TDepartment = class
+  private
+    FDeptID: Integer;
+    FDeptName: string;
+  public
+    property DeptID: Integer read FDeptID write FDeptID;
+    property DeptName: string read FDeptName write FDeptName;
+  end;
+
+  IDepartment = interface
+    procedure Insert(Department: TDepartment);
+    function GetDepartment(ID: Integer);
+  end;
+
+  TSqlServerDepartment = class(TInterfacedObject, IDepartment)
+  public
+    procedure Insert(Department: TDepartment);
+    function GetDepartment(ID: Integer): TDepartment;
+  end;
+
+implementation
+
+end.

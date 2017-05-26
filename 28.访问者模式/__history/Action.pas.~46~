@@ -1,0 +1,122 @@
+unit Action;
+
+interface
+
+type
+   TAction = class;
+
+  TPerson = class
+  public
+    procedure Accept(Visitor: TAction);
+  end;
+
+  TMan = class(TPerson)
+  private
+    FName: string;
+  public
+    constructor Create;
+    property Name: string read FName;
+  end;
+
+  TWoman = class(TPerson)
+  private
+    FName: string;
+  public
+    constructor Create;
+    property Name: string read FName;
+  end;
+
+
+  TAction = class
+  public
+    procedure GetManConclusion(ConcreteElementA: TMan); virtual; abstract;
+    procedure GetWomanConclusion(ConcreteElementB: TWoman); virtual; abstract;
+  end;
+
+  TSuccess = class(TAction)
+  private
+    FName: string;
+  public
+    constructor Create;
+    procedure GetManConclusion(ConcreteElementA: TMan); override;
+    procedure GetWomanConclusion(ConcreteElementB: TWoman); override;
+    property Name: string read FName;
+  end;
+
+  TFailing = class(TAction)
+  private
+    FName: string;
+  public
+    constructor Create;
+    procedure GetManConclusion(ConcreteElementA: TMan); override;
+    procedure GetWomanConclusion(ConcreteElementB: TWoman); override;
+    property Name: string read FName;
+  end;
+
+implementation
+
+uses
+  Dialogs, SysUtils;
+
+
+{ TWoman }
+
+constructor TWoman.Create;
+begin
+  FName := '女人';
+end;
+
+{ TMan }
+
+constructor TMan.Create;
+begin
+  FName := '男人';
+end;  
+
+{ TSuccess }
+
+constructor TSuccess.Create;
+begin
+  FName := '成功';
+end;
+
+procedure TSuccess.GetManConclusion(ConcreteElementA: TMan);
+var
+  S: string;
+begin
+  S := Format('%s%s时，背后多半有一个伟大的女人。', [Self.Name, ConcreteElementA.Name]);
+  ShowMessage(S);
+end;
+
+procedure TSuccess.GetWomanConclusion(ConcreteElementB: TWoman);
+var
+  S: string;
+begin
+  S := Format('%s%s时，背后大多有一个不成功的男人。', [Self.Name, ConcreteElementB.Name]);
+  ShowMessage(S);
+end;
+
+{ TFailing }
+
+constructor TFailing.Create;
+begin
+  FName := '失败';
+end;
+
+procedure TFailing.GetManConclusion(ConcreteElementA: TMan);
+var
+  S: string;
+begin
+  S := Format('%s%s时，闷头喝酒，谁也不用劝。', [Self.Name, ConcreteElementA.Name]);
+  ShowMessage(S);
+end;
+
+procedure TFailing.GetWomanConclusion(ConcreteElementB: TWoman);
+var
+  S: string;
+begin
+  S := Format('%s%s时，眼泪汪汪，谁也劝不了。', [Self.Name, ConcreteElementB.Name]);
+  ShowMessage(S);
+end;
+
+end.

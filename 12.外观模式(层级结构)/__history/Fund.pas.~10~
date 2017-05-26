@@ -1,0 +1,25 @@
+unit Fund;
+
+interface
+
+uses
+  InvestType;
+
+type
+  TFund = class
+  private
+    Stock1: TStock1;
+    Stock2: TStock2;
+    Stock3: TStock3;
+    NationalDebt: TNationalDebt;
+    Realty: TRealty;
+  public
+    procedure Fund1Buy;
+    procedure Fund1Sell;
+    procedure Fund2Buy;
+    procedure Fund2Sell;
+  end;
+
+implementation
+
+end.

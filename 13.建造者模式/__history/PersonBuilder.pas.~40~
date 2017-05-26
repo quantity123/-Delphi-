@@ -1,0 +1,122 @@
+unit PersonBuilder;
+
+interface
+
+uses
+  PersonBodyProperty;
+
+type
+  TPersonBuilder = class
+  private
+    FPersonBodyProperty: TPersonBodyProperty;
+    procedure BuildHead; virtual; abstract;
+    procedure BuildBody; virtual; abstract;
+    procedure BuildArmLeft; virtual; abstract;
+    procedure BuildArmRight; virtual; abstract;
+    procedure BuildLegLeft; virtual; abstract;
+    procedure BuildLegRight; virtual; abstract;
+  public
+    constructor Create;
+    destructor Destroy; override;
+  end;
+
+  TPersonThinBuilder = class(TPersonBuilder)
+  public
+    procedure BuildHead; override;
+    procedure BuildBody; override;
+    procedure BuildArmLeft; override;
+    procedure BuildArmRight; override;
+    procedure BuildLegLeft; override;
+    procedure BuildLegRight; override;
+  end;
+
+  TPersonFatBuilder = class(TPersonBuilder)
+  public
+    procedure BuildHead; override;
+    procedure BuildBody; override;
+    procedure BuildArmLeft; override;
+    procedure BuildArmRight; override;
+    procedure BuildLegLeft; override;
+    procedure BuildLegRight; override;
+  end;
+
+implementation
+
+{ TPersonBuilder }
+
+constructor TPersonBuilder.Create;
+begin
+  FPersonBodyProperty := TPersonBodyProperty.Create;
+end;
+
+destructor TPersonBuilder.Destroy;
+begin
+  FPersonBodyProperty.Free;
+  inherited;
+end;
+
+{ TPersonFatBuilder }
+
+procedure TPersonFatBuilder.BuildArmLeft;
+begin
+
+end;
+
+procedure TPersonFatBuilder.BuildArmRight;
+begin
+
+end;
+
+procedure TPersonFatBuilder.BuildBody;
+begin
+  FPersonBodyProperty.Add('≈÷…ÌÃÂ');
+end;
+
+procedure TPersonFatBuilder.BuildHead;
+begin
+  FPersonBodyProperty.Add('≈÷Õ∑');
+end;
+
+procedure TPersonFatBuilder.BuildLegLeft;
+begin
+  FPersonBodyProperty.Add('≈÷◊ÛÕ»');
+end;
+
+procedure TPersonFatBuilder.BuildLegRight;
+begin
+  FPersonBodyProperty.Add('≈÷”“Õ»');
+end;
+
+{ TPersonThinBuilder }
+
+procedure TPersonThinBuilder.BuildArmLeft;
+begin
+  FPersonBodyProperty.Add(' ›◊Û±€');
+end;
+
+procedure TPersonThinBuilder.BuildArmRight;
+begin
+  FPersonBodyProperty.Add(' ›”“±€');
+end;
+
+procedure TPersonThinBuilder.BuildBody;
+begin
+  FPersonBodyProperty.Add(' ›…ÌÃÂ');
+end;
+
+procedure TPersonThinBuilder.BuildHead;
+begin
+  FPersonBodyProperty.Add(' ›Õ∑');
+end;
+
+procedure TPersonThinBuilder.BuildLegLeft;
+begin
+  FPersonBodyProperty.Add(' ›◊ÛÕ»');
+end;
+
+procedure TPersonThinBuilder.BuildLegRight;
+begin
+  FPersonBodyProperty.Add(' ›”“Õ»');
+end;
+
+end.

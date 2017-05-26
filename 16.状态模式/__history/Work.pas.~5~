@@ -1,0 +1,18 @@
+unit Work;
+
+interface
+
+uses
+  State;
+
+type
+  TWork = class
+  private
+    FState: TState;
+  public
+    
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/19 15:50:51.309.pas,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\2.模板方法模式\Main.pas</Transaction>
+    <Transaction>2016/08/19 15:50:51.309.dfm,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\2.模板方法模式\Main.dfm</Transaction>
+    <Transaction>2016/08/19 15:50:54.213.bdsproj,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Project1.bdsproj=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\2.模板方法模式\Project1.bdsproj</Transaction>
+    <Transaction>2016/08/19 15:51:38.456.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\2.模板方法模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\2.模板方法模式\Tmplate.pas</Transaction>
+    <Transaction>2016/08/19 16:10:02.715.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\2.模板方法模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\2.模板方法模式\TestPaper.pas</Transaction>
+  </Transactions>
+</BorlandProject>

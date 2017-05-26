@@ -1,0 +1,14 @@
+unit uDepartment;
+
+interface
+
+type
+  TDepartment = class
+  private
+    
+  public
+  end;
+
+implementation
+
+end.

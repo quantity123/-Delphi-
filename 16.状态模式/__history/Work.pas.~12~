@@ -1,0 +1,32 @@
+unit Work;
+
+interface
+
+uses
+  State;
+
+type
+  TWork = class
+  private
+    FState: TState;
+  public
+    constructor Create;
+    destructor Destroy; override;
+  end;
+
+implementation
+
+{ TWork }
+
+constructor TWork.Create;
+begin
+
+end;
+
+destructor TWork.Destory;
+begin
+
+  inherited;
+end;
+
+end.

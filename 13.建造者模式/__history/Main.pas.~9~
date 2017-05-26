@@ -1,0 +1,39 @@
+unit Main;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Memo1: TMemo;
+    Button1: TButton;
+    Button2: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  PersonCreate;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  PersonCreate: TPersonCreate;
+begin
+
+   TPersonCreate.Create(Thin);
+end;
+
+end.

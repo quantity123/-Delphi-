@@ -1,0 +1,19 @@
+unit Work;
+
+interface
+
+uses
+  State;
+
+type
+  TWork = class
+  private
+    FState: TState;
+  public
+    constructor Create;
+    destructor Destroy; override;
+  end;
+
+implementation
+
+end.

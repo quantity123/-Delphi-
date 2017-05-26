@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/09/26 15:02:05.089.pas,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Person.pas</Transaction>
+    <Transaction>2016/09/26 15:02:05.089.dfm,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Person.dfm</Transaction>
+    <Transaction>2016/09/26 15:02:07.461.bdsproj,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Project1.bdsproj=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Project1.bdsproj</Transaction>
+    <Transaction>2016/09/26 15:02:29.411.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Person.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Main.pas</Transaction>
+    <Transaction>2016/09/26 15:02:29.411.dfm,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Person.dfm=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Main.dfm</Transaction>
+    <Transaction>2016/09/26 15:02:53.108.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Person.pas</Transaction>
+    <Transaction>2016/09/26 15:13:25.849.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Action.pas</Transaction>
+    <Transaction>2016/09/26 15:55:40.657.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Person.pas=</Transaction>
+    <Transaction>2016/09/26 15:59:55.483.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Action.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Person.pas</Transaction>
+    <Transaction>2016/09/26 16:00:44.475.pas,C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\Unit1.pas=C:\Users\liuliang.quantity\Desktop\大话设计模式Delphi\28.访问者模式\ObjectStructure.pas</Transaction>
+  </Transactions>
+</BorlandProject>

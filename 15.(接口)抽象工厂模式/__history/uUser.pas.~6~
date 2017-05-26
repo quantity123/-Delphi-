@@ -1,0 +1,16 @@
+unit uUser;
+
+interface
+
+type
+  TUser = class
+  private
+    FId: Integer;
+    FName: string;
+  public
+    property ID: Integer read FId write FId;
+  end;
+
+implementation
+
+end.
