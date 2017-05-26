@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/01 18:32:34.050.pas,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\liuliang.quantity\Desktop\商场收银系统\Unit1.pas</Transaction>
+    <Transaction>2016/08/01 18:32:34.050.dfm,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\liuliang.quantity\Desktop\商场收银系统\Unit1.dfm</Transaction>
+    <Transaction>2016/08/01 18:32:35.216.bdsproj,C:\Users\liuliang.quantity\Documents\RAD Studio\Projects\Project1.bdsproj=C:\Users\liuliang.quantity\Desktop\商场收银系统\Project1.bdsproj</Transaction>
+    <Transaction>2016/08/01 18:36:01.933.pas,C:\Users\liuliang.quantity\Desktop\商场收银系统\Unit2.pas=C:\Users\liuliang.quantity\Desktop\商场收银系统\CashContext.pas</Transaction>
+    <Transaction>2016/08/01 18:41:22.981.pas,C:\Users\liuliang.quantity\Desktop\商场收银系统\Unit2.pas=C:\Users\liuliang.quantity\Desktop\商场收银系统\CashSuper.pas</Transaction>
+  </Transactions>
+</BorlandProject>

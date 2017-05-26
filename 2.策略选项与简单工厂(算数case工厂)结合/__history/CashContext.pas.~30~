@@ -1,0 +1,38 @@
+unit CashContext;
+
+interface
+
+uses
+  CashSuper;
+
+type
+  TCashContext = class(TObject)
+  private
+    FCashSuper: TCashSuper;
+  public
+    constructor Create(iType: string);
+    destructor Destroy; override;
+    function GetResult(Money: Double): Double;
+  end;
+
+implementation
+
+{ TCashContext }
+
+constructor TCashContext.Create(iType: string);
+begin
+
+end;
+
+destructor TCashContext.Destroy;
+begin
+
+  inherited;
+end;
+
+function TCashContext.GetResult(Money: Double): Double;
+begin
+
+end;
+
+end.
